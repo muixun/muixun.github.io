@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const validStreams = [];
         // window.location.hostname er domenet du kjører fra (f.eks. localhost eller din RasPi IP)
         // ERSTATT 'WANIPADRESSE' med din eksakte offentlige IP eller domenenavn (uten http:// eller /)
-        const hostname = 'https://muixun.github.io/'; 
+        const hostname = 'muixun.github.io'; 
 
         inputs.forEach(group => {
             const service = group.querySelector('.service-select').value;
