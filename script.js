@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const validStreams = [];
         // window.location.hostname er domenet du kjører fra (f.eks. localhost eller din RasPi IP)
         // ERSTATT 'WANIPADRESSE' med din eksakte offentlige IP eller domenenavn (uten http:// eller /)
-        const hostname = ''; 
+        const hostname = 'https://muixun.github.io/'; 
 
         inputs.forEach(group => {
             const service = group.querySelector('.service-select').value;
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function switchChat(service, channel) {
         // Bruk hostname-variabelen definert over for konsistens
-        const hostname = ''; 
+        const hostname = 'muixun.github.io'; 
         let chatSrc = '';
         if (service === 'twitch') {
             // KORRIGERT: Bruker backticks (`) og https://
