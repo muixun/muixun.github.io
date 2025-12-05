@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Stream Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Venstre sidepanel for Stream Manager -->
+        <aside class="sidebar-left hidden" id="stream-manager-sidebar">
+            <h2>Manage Streams</h2>
+            <div id="stream-input-area">
+                <!-- Input fields will be added here -->
+            </div>
+            <button id="add-input-btn">Add Another Stream</button>
+            <button id="save-streams-btn">Save and Update</button>
+        </aside>
+
+        <!-- HovedomrÃ¥de for videoer -->
+        <main class="main-video-area" id="video-area">
+            <!-- Video containers will be added here dynamically via JavaScript -->
+        </main>
+
+        <!-- HÃ¸yre sidepanel for chat -->
+        <aside class="sidebar-right hidden" id="chat-sidebar">
+            <div id="chat-content">
+                Select a stream to see the chat here.
+            </div>
+        </aside>
+
+        <!-- Flytende kontroller nederst til hÃ¸yre -->
+        <div class="floating-controls-right">
+            <!-- Ny knapp for Ã¥ Ã¥pne/lukke venstre panel -->
+            <button id="toggle-manager-btn" class="control-text-btn">Manage Streams</button>
+            <span>|</span>
+            <!-- Knapp for Ã¥ Ã¥pne/lukke hÃ¸yre panel -->
+            <button id="toggle-chat-btn" class="control-text-btn">Show Chat</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
